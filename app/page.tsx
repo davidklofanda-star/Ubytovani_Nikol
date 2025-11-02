@@ -466,7 +466,7 @@ export default function Home() {
                 </button>
                 <button 
                   onClick={() => scrollToSection('kontakt')} 
-                  className="text-left py-2 transition-color-color hover:text-primary text-primary"
+                  className="text-left py-2 transition-color hover:text-primary text-primary"
                 >
                   {t('navigation.contact')}
                 </button>
