@@ -453,7 +453,7 @@ export default function Home() {
                   {t('navigation.rooms')}
                 </button>
                 <button 
-                  onClick={() => scrollToSection('vybavenen')} 
+                  onClick={() => scrollToSection('vybaveni')} 
                   className="text-left py-2 transition-colors hover:text-primary text-primary"
                 >
                   {t('navigation.facilities')}
