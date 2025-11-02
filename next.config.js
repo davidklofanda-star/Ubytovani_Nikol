@@ -1,43 +1,43 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // DŮLEŽITÉ pro statický export:
+  output: 'export',
+  trailingSlash: true,
+
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
+    // Povolit build i při type-errors (v pořádku, pokud to tak chceš)
     ignoreBuildErrors: true,
   },
   images: { unoptimized: true },
+
+  // (Next má oficiálně devIndicators jako objekt, ale když ti to takto funguje, ponech.)
   devIndicators: false,
+
+  // Vlastní (nevadí)
   allowedDevOrigins: [
     "*.macaly.dev",
     "*.macaly.app",
     "*.macaly-app.com",
     "*.macaly-user-data.dev",
   ],
-  // https://github.com/vercel/next.js/issues/79588#issuecomment-2972850452
+
   experimental: {
     preloadEntriesOnStart: false,
     webpackMemoryOptimizations: true,
   },
-  webpack: (config, { dev, isServer }) => {
-    // Apply macaly-tagger in development for both client and server
+
+  webpack: (config, { dev }) => {
     if (dev) {
       config.module.rules.unshift({
         test: /\.(jsx|tsx)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "macaly-tagger",
-          },
-        ],
-        enforce: "pre", // Run before other loaders
+        use: [{ loader: "macaly-tagger" }],
+        enforce: "pre",
       });
     }
-
     return config;
   },
 };
