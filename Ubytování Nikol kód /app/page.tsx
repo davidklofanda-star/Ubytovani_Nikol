@@ -835,15 +835,14 @@ export default function Home() {
           <div className="max-w-lg mx-auto">
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-8">
-                <form onSubmit={handleFormSubmit} className="space-y-6">
+                <form action="https://formspree.io/f/mdkppjjl" method="POST" className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">{t('reservation.form.name')} *</Label>
                       <Input
                         id="name"
+                        name="name"          
                         type="text"
-                        value={formData.name}
-                        onChange={(e) => handleInputChange('name', e.target.value)}
                         required
                         placeholder={t('reservation.form.placeholders.name')}
                       />
@@ -852,30 +851,35 @@ export default function Home() {
                       <Label htmlFor="email">{t('reservation.form.email')} *</Label>
                       <Input
                         id="email"
+                        name="email"         
                         type="email"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange('email', e.target.value)}
                         required
                         placeholder={t('reservation.form.placeholders.email')}
                       />
                     </div>
                   </div>
-
+                
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-1">
+                    <div className="space-y-2">
                       <Label htmlFor="phone">{t('reservation.form.phone')} *</Label>
                       <Input
                         id="phone"
+                        name="phone"         
                         type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange('phone', e.target.value)}
                         required
                         placeholder={t('reservation.form.placeholders.phone')}
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="roomType">{t('reservation.form.roomType')} *</Label>
-                      <Select value={formData.roomType} onValueChange={(value) => handleInputChange('roomType', value)}>
+                
+                      {/* Tvůj hezký Select necháme, jen uložíme hodnotu do hidden inputu */}
+                      <Select
+                        onValueChange={(v) => {
+                          const el = document.getElementById("roomTypeHidden") as HTMLInputElement | null;
+                          if (el) el.value = v;
+                        }}
+                      >
                         <SelectTrigger>
                           <SelectValue placeholder={t('reservation.form.placeholders.roomType')} />
                         </SelectTrigger>
@@ -887,45 +891,41 @@ export default function Home() {
                           ))}
                         </SelectContent>
                       </Select>
+                      {/* Tohle pošle vybraný typ pokoje do Formspree */}
+                      <input id="roomTypeHidden" name="roomType" type="hidden" required />
                     </div>
                   </div>
-
+                
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="dateFrom">{t('reservation.form.dateFrom')} *</Label>
-                      <Input
-                        id="dateFrom"
-                        type="date"
-                        value={formData.dateFrom}
-                        onChange={(e) => handleInputChange('dateFrom', e.target.value)}
-                        required
-                      />
+                      <Input id="dateFrom" name="dateFrom" type="date" required />   
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="dateTo">{t('reservation.form.dateTo')} *</Label>
-                      <Input
-                        id="dateTo"
-                        type="date"
-                        value={formData.dateTo}
-                        onChange={(e) => handleInputChange('dateTo', e.target.value)}
-                        required
-                      />
+                      <Input id="dateTo" name="dateTo" type="date" required />       
                     </div>
                   </div>
-
+                
                   <div className="space-y-2">
                     <Label htmlFor="message">{t('reservation.form.message')}</Label>
                     <Textarea
                       id="message"
-                      value={formData.message}
-                      onChange={(e) => handleInputChange('message', e.target.value)}
+                      name="message"       
                       placeholder={t('reservation.form.placeholders.message')}
                       rows={4}
                     />
                   </div>
-
-                  <Button 
-                    type="submit" 
+                
+                  {/* Užitečné skryté položky */}
+                  <input type="hidden" name="_subject" value="Nová rezervace z webu Ubytování Nikol" />
+                  {/* Volitelné: přesměrování po odeslání na tvou děkovací stránku
+                     <input type="hidden" name="_next" value="https://tvoje-domena.cz/dekujeme" />
+                  */}
+                  <input type="text" name="_gotcha" className="hidden" />  {/* jednoduchá anti-spam past */}
+                
+                  <Button
+                    type="submit"
                     className="w-full gradient-warm hover:scale-105 transition-all duration-300 text-white py-3 text-lg"
                     size="lg"
                   >
