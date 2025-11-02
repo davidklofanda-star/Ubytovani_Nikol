@@ -1,0 +1,346 @@
+{
+  "navigation": {
+    "brand": "Accommodation Nikol",
+    "rooms": "Rooms",
+    "facilities": "Facilities",
+    "about": "About",
+    "contact": "Contact",
+    "reserve": "RESERVE"
+  },
+  "hero": {
+    "title": "Accommodation Nikol",
+    "subtitle": "We cordially invite you to our family accomodation located in the quiet Brno district of Horní Heršpice, close to the popular inline / cycling path, golf course and animal farm.",
+    "button": "RESERVE"
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "subtitle": "We offer you comfortable accommodation all year round with a total capacity of 13 beds in these 5 rooms with private facilities.",
+    "reserve": "Reserve this room",
+    "moreInfo": "More information",
+    "completeEquipment": "Basic equipment:",
+    "basicEquipment": "Basic room equipment:",
+    "basicEquipmentItems": [
+      "Electric kettle, coffee, tea",
+      "Microwave, cups, glasses, plates, cutlery",
+      "Minibar for extra charge",
+      "Hair dryer"
+    ],
+    "pricing": {
+      "title": "Important pricing information",
+      "items": [
+        "• Prices are in CZK per room/apartment/night without breakfast.",
+        "• Breakfast can be prepared in advance in the room / refrigerator (by agreement for extra charge).",
+        "• Prices may change during trade fairs and Moto GP",
+        "• Bulk discounts available upon agreement",
+        "• Payment by bank transfer or cash",
+        "• ČSOB Account: 261 650 781 / 0300"
+      ]
+    },
+    "roomTypes": {
+      "singleRoom": "Single Room",
+      "doubleRoomNoBalcony": "Double Room without Balcony",
+      "doubleRoomWithBalcony": "Double Room with Balcony",
+      "tripleRoom": "Triple Room with Small Terrace",
+      "apartment": "Apartment with Balcony and Equipped Kitchenette"
+    },
+    "capacity": {
+      "oneToTwo": "1-2 people",
+      "oneToThree": "1-2-3 people",
+      "twoToFour": "2-4 people"
+    },
+    "roomDetails": {
+      "singleRoom": {
+        "beds": "2 beds or double bed",
+        "price": "1,000 CZK / 1 person",
+        "priceNote": "1,200 CZK / 2 people",
+        "features": ["Microwave", "TV", "Fridge", "Electric kettle", "Private bathroom", "Hair dryer", "Minibar at extra charge", "Dishes + cutlery"],
+        "description": "Single room without balcony, ideal for individuals. Can accommodate 2 people by arrangement"
+      },
+      "doubleRoomNoBalcony": {
+        "beds": "2 single beds or double bed",
+        "price": "1,300 CZK / 2 people",
+        "priceNote": "1,050 CZK / 1 person",
+        "features": ["Microwave", "TV", "Fridge", "Electric kettle", "Private bathroom","Hair dryer", "Minibar at extra charge", "Dishes + cutlery"],
+        "description": "Cozy double room with option of separate beds or double bed as desired."
+      },
+      "doubleRoomWithBalcony": {
+        "beds": "2 single beds or double bed",
+        "price": "1,400 CZK / 2 people",
+        "priceNote": "1,100 CZK / 1 person",
+        "features": ["Microwave", "TV", "Fridge", "Electric kettle", "Private bathroom", "Balcony", "Hair dryer", "Minibar at extra charge", "Dishes + cutlery"],
+        "description": "Romantic room with double bed, perfect for couples. Balcony with seating and garden view."
+      },
+      "tripleRoom": {
+        "beds": "3 single beds or double bed and single bed",
+        "price": "1,500 CZK / 1-2 people",
+        "priceNote": "1,800 CZK / 3 people",
+        "features": ["Microwave", "TV", "Fridge", "Electric kettle", "Private bathroom", "Hair dryer", "Small terrace" , "Minibar at extra charge", "Dishes + cutlery"],
+        "description": "Spacious room for up to three people with own small terrace for relaxation in fresh air."
+      },
+      "apartment": {
+        "beds": "4 single beds or double bed and 2 single beds",
+        "price": "2,000 CZK / 3 people",
+        "priceNote": "2,250 CZK / 4 people",
+        "features": ["Private bathroom with bathtub", "Hair dryer", "Large TV", "Fridge", "Nespresso coffee maker", "Terrace", "Equipped kitchen","Microwave", "Toaster", "Minibar at extra charge", "Dishes + cutlery"],
+        "basicEquipmentItems": [
+          "Electric kettle, coffee, tea",
+          "Microwave, cups, glasses, plates, cutlery, Nespresso coffee maker",
+          "Minibar for extra charge",
+          "Hair dryer"
+        ],
+        "description": "Spacious apartment with separate bedroom (3 beds), living room (1 bed) with kitchenette, balcony and garden view. Ideal for families or longer stays. Apartment is located on the second floor (steeper stairs)."
+      }
+    }
+  },
+  "facilities": {
+    "title": "Facilities and Services",
+    "subtitle": "Everything you need for a comfortable stay",
+    "items": [
+      "Free WiFi",
+      "Free parking",
+      "Strategic location",
+      "Private facilities"
+    ]
+  },
+  "about": {
+    "title": "About Our Accomodation",
+    "subtitle": "We cordially invite you to our family accomodation Ubytování Nikol, located in the quiet Brno district of Horní Heršpice, close to the popular cycling path and golf course. The historic city center is just 5 minutes drive away. Our vacation will be enjoyed by couples, families with children, as well as sports enthusiasts and lovers of monuments.",
+    "roomsCapacity": {
+      "title": "Our Rooms and Capacity",
+      "description": "We offer you comfortable accommodation all year round with a total capacity of 10 beds in these comfortable rooms:",
+      "items": [
+        "• two double rooms (double bed)",
+        "• double room with balcony (double bed)",
+        "• triple room with terrace (double and single bed)",
+        "• four-bed apartment with balcony (double and single bed in bedroom + single bed in living room)"
+      ]
+    },
+    "equipment": {
+      "title": "Room Equipment",
+      "description1": "All rooms have TV with satellite reception, refrigerator and electric kettle (coffee and tea in every room) in addition to beds.",
+      "description2": "The apartment has a living space with a comfortable bed, TV (satellite) and balcony access compared to other rooms. In its own kitchenette you can also use an electric stove, microwave, electric kettle, refrigerator, toaster, toaster and bar seating. There is also a crib in the apartment bedroom.",
+      "description3": "Private bathrooms with shower and toilet are a matter of course for each accommodation unit. Only the apartment is equipped with a spacious corner bath instead of a shower. We have ensured free WiFi internet connection throughout the building."
+    },
+    "services": {
+      "title": "Services and Comfort",
+      "description": "The stay also includes daily serving of delicious breakfast in our dining room (except for the apartment - possibility to order additionally). You can enjoy nice weather and fresh air on the balconies and terraces with seating. You can park your cars either directly at the building (2 fenced places) or in the adjacent parking lot."
+    },
+    "surroundings": {
+      "title": "Surroundings and Activities",
+      "description1": "The fantastic strategic location of the accommodation will take you on trips to the nearer and farther surroundings. Right next door you will find a children's playground where your little ones will have plenty of fun. But they will certainly be most pleased by the local farm with domestic and more exotic animals. Together you will see not only horses, donkeys and sheep, but also deer, kangaroos, bison and many others.",
+      "description2": "Our accomodation is also directly located on a 15 km long inline track. Cyclists and skaters are taken care of. Golfers will use the Kšírovka driving range, behind which there is also a natural biotope. This is ideal for swimming and cooling off during hot summer days."
+    },
+    "brno": {
+      "title": "Brno and its Monuments",
+      "description1": "Our beautiful city of course also offers you plenty of interesting opportunities for quality leisure time. Walking through historic streets, restaurants, cafes, visiting attractions and monuments, you will definitely not be bored.",
+      "description2": "We recommend you visit the Mendel Museum, St. Peter's and Paul's Cathedral, Dietrichstein Palace, Reduta Theater, Vegetable Market, Brno Astronomical Clock, Starobrno Brewery or Špilberk Castle.",
+      "conclusion": "We firmly believe that you will truly fall in love with your stay at Accommodation Nikol, rest excellently and return to us with joy! We look forward to your visit!"
+    }
+  },
+  "reservation": {
+    "title": "Accommodation Reservation",
+    "subtitle": "Fill out the form below and we will contact you with confirmation of availability and further information",
+    "form": {
+      "name": "Name and Surname",
+      "email": "Email",
+      "phone": "Phone",
+      "roomType": "Room Type",
+      "dateFrom": "Arrival Date",
+      "dateTo": "Departure Date",
+      "message": "Message to Host",
+      "placeholders": {
+        "name": "Your name",
+        "email": "your@email.cz",
+        "phone": "+420 xxx xxx xxx",
+        "roomType": "Select room type",
+        "message": "Do you have any special requirements or questions? Write to us..."
+      },
+      "submit": "Send Reservation"
+    },
+    "success": "Thank you for your interest! We will contact you soon with reservation confirmation.",
+    "error": "We apologize, there was an error sending the form. Please try again."
+  },
+  "contact": {
+    "title": "Contact and Location",
+    "subtitle": "You will find us in a quiet part of Brno with excellent connection to the center",
+    "info": {
+      "title": "Contact Information",
+      "address": "Pěšina 6, Brno, 619 00, Czech Republic",
+      "phone": "+420 777 565 823",
+      "email": "silvaprachovska@centrum.cz",
+      "important": "Important Information",
+      "checkIn": "Check-in: 14:00 - 21:00",
+      "checkOut": "Check-out: until 10:00",
+      "payment": "Payment by bank transfer or cash",
+      "smoking": "Non-smoking rooms",
+      "pets": "Pets are not allowed"
+    },
+    "surroundings": {
+      "title": "Our Surroundings",
+      "parkingCaption": "Parking at the accommodation",
+      "animalsCaption": "Animal enclosure 50m from the accommodation"
+    },
+    "location": {
+      "title": "Location and Surroundings",
+      "description": "Ubytování Nikol is located in the quiet Brno district of Horní Heršpice",
+      "transport": {
+        "title": "🚗 Transportation",
+        "items": [
+          "Historic center - 5 minutes drive",
+          "Brno-Tuřany Airport - 15 minutes drive",
+          "BVV (exhibition center) - 7 minutes drive",
+          "Highway Prague/Bratislava/Vienna - ideal connection"
+        ]
+      },
+      "publicTransport": {
+        "title": "🚌 Local Transport",
+        "items": [
+          "Public transport stop - 20 meters from the house",
+          "Directions: Olympie, Vaňovka, Kampus-Bohunice",
+          "Free parking at the house"
+        ]
+      }
+    }
+  },
+  "activities": {
+    "title": "Activities in the Area",
+    "subtitle": "Discover interesting places and activities around our accommodation",
+    "items": [
+      {
+        "name": "Cycling Path",
+        "description": "Beautiful cycling routes right in the accommodation area for active recreation lovers.",
+        "url": null
+      },
+      {
+        "name": "Golf Kšírovka",
+        "description": "Professional golf course with beautiful views and quality facilities.",
+        "url": "https://www.ksirovka.cz/"
+      },
+      {
+        "name": "Hopsálkov",
+        "description": "Fun center for children with trampolines and other attractions.",
+        "url": "https://www.ksirovka.cz/park-sportu-a-zabavy"
+      },
+      {
+        "name": "Natural Biotope",
+        "description": "Natural swimming pool with clean water and beautiful environment for relaxation.",
+        "url": "https://biotopbrno.cz/"
+      },
+      {
+        "name": "KOMEC Sports Center",
+        "description": "Modern sports center just 500m from us with a wide range of activities.",
+        "url": "https://www.komec.cz/"
+      },
+      {
+        "name": "TOBOGA Bongo Brno",
+        "description": "Fun park just 2km from us - great fun for the whole family.",
+        "url": "https://www.toboga.cz/brno"
+      },
+      {
+        "name": "Olympia Shopping Center",
+        "description": "The largest shopping center in Brno with a wide range of shops and services.",
+        "url": "https://www.olympia-centrum.cz/"
+      },
+      {
+        "name": "Veveří Castle",
+        "description": "Historic castle with rich history and beautiful views of the surrounding landscape.",
+        "url": "https://www.hrad-veveri.cz/cs"
+      },
+      {
+        "name": "Brno Reservoir",
+        "description": "Popular place for swimming, water sports and relaxation by the water.",
+        "url": "https://www.brnenskaprehrada.cz/"
+      },
+      {
+        "name": "By the way Restaurant",
+        "description": "Quality restaurant just 500m from us with indoor and outdoor children's playground.",
+        "url": "https://www.btwrestaurace.cz/"
+      },
+      {
+        "name": "Club Victoria",
+        "description": "Sports center with beach volleyball, tennis, badminton, squash and bowling.",
+        "url": "https://www.centrumviktoria.cz/"
+      },
+      {
+        "name": "Observatory and Planetarium Kraví hora",
+        "description": "Modern observatory with planetarium offering fascinating views of the universe and astronomical programs.",
+        "url": "https://www.hvezdarna.cz"
+      },
+      {
+        "name": "Zoo Brno",
+        "description": "One of the most beautiful zoos in the Czech Republic with more than 1,500 animals.",
+        "url": "https://www.zoobrno.cz"
+      },
+      {
+        "name": "National Theatre in Brno",
+        "description": "Prestigious theatre scene with rich program of operas, ballets and dramatic performances.",
+        "url": "https://www.ndbrno.cz"
+      },
+      {
+        "name": "Špilberk Castle",
+        "description": "Brno's landmark with museum, exhibitions and beautiful views of the entire city.",
+        "url": "https://www.spilberk.cz"
+      }
+    ],
+    "clickForMore": "Click for more information →"
+  },
+  "reviews": {
+    "title": "Guest Reviews",
+    "subtitle": "What our guests say about us",
+    "items": [
+      {
+        "rating": "10",
+        "text": "Quiet place close to the city center. Good public transport accessibility. The owner gave us good tips for restaurants and places to visit."
+      },
+      {
+        "rating": "10", 
+        "text": "Quiet, peaceful location, parking on site, clean accommodation, perfectly equipped with refreshments in the room. Everything carefully prepared."
+      },
+      {
+        "rating": "9",
+        "text": "Very clean and quiet environment in a well-accessible location. Nearby mini zoo, sports facilities, playground and lookout tower with views of Brno."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Our Certificates and Awards",
+    "megaubytko": "MegaUbytko.cz 2024 - Excellent rating 9.4"
+  },
+  "travelAgency": {
+    "heading": "Travel agency TOPRANIK",
+    "title": "CA Topranik s.r.o. | ",
+    "website": "www.topranik.cz",
+    "alt": "CA Topranik - Travel Agency"
+  },
+  "footer": {
+    "brand": "Accommodation Nikol",
+    "subtitle": "Comfortable accommodation in the heart of Brno",
+    "phone": "Phone: +420 777 565 823",
+    "email": "Email: silvaprachovska@centrum.cz",
+    "copyright": "© 2025 Accommodation Nikol. All rights reserved."
+  },
+  "gallery": {
+    "photo": "photo"
+  },
+  "meta": {
+    "title": "Ubytování Nikol - Modern Accommodation in Brno | 5 Room Types",
+    "description": "Ubytování Nikol in Brno offers comfortable accommodation with 5 different room types. Private bathrooms, free parking, WiFi and breakfast. Booking rating 9/10."
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
