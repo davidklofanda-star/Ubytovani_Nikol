@@ -87,9 +87,6 @@
 "use client";
 
 import { useState, useEffect } from 'react'
-import { useAction } from 'convex/react'
-import { api } from '@/convex/_generated/api'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
@@ -127,6 +124,7 @@ import {
 } from 'lucide-react'
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { useI18n } from '@/contexts/i18n-context'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
   const { t, getRaw } = useI18n()
@@ -138,17 +136,7 @@ export default function Home() {
   const [galleryModal, setGalleryModal] = useState({ isOpen: false, roomIndex: 0, imageIndex: 0 })
   const [surroundingsModal, setSurroundingsModal] = useState({ isOpen: false, imageIndex: 0 })
   const [selectedRoomType, setSelectedRoomType] = useState('')
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    roomType: '',
-    dateFrom: '',
-    dateTo: '',
-    message: ''
-  })
-
-  const sendContactEmail = useAction(api.sendContactEmail.sendContactEmail)
+  
 
   useEffect(() => {
     setIsVisible(true)
@@ -342,43 +330,11 @@ export default function Home() {
 
   const handleReservation = (roomType?: string) => {
     if (roomType) {
-      setFormData(prev => ({ ...prev, roomType }))
+      const el = document.getElementById("roomTypeHidden") as HTMLInputElement | null;
+      if (el) el.value = roomType;
     }
-    scrollToSection('rezervace')
-  }
-
-  const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    try {
-      await sendContactEmail({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        roomType: formData.roomType,
-        dateFrom: formData.dateFrom,
-        dateTo: formData.dateTo,
-        message: formData.message,
-      })
-      alert(t('reservation.success'))
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        roomType: '',
-        dateFrom: '',
-        dateTo: '',
-        message: ''
-      })
-    } catch (error) {
-      console.error('Error sending email:', error)
-      alert(t('reservation.error'))
-    }
-  }
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }))
-  }
+    scrollToSection('rezervace');
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -453,7 +409,7 @@ export default function Home() {
                   {t('navigation.rooms')}
                 </button>
                 <button 
-                  onClick={() => scrollToSection('vybavenen')} 
+                  onClick={() => scrollToSection('vybaveni')} 
                   className="text-left py-2 transition-colors hover:text-primary text-primary"
                 >
                   {t('navigation.facilities')}
