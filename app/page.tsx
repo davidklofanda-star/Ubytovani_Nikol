@@ -146,7 +146,6 @@ export default function Home() {
     message: ''
   })
 
-  const sendContactEmail = useAction(api.sendContactEmail.sendContactEmail)
 
   useEffect(() => {
     setIsVisible(true)
